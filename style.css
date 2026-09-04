@@ -127,26 +127,12 @@ input {
 
 
 .brand-icon {
-
-    width: 43px;
-
-    height: 43px;
-
-    border: 2px solid var(--brown-light);
-
-    color: var(--brown-light);
-
-    display: grid;
-
-    place-items: center;
-
-    font-family: Georgia, serif;
-
-    font-size: 22px;
-
-    font-weight: bold;
-
+    width: 120px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
 }
+
 
 
 .brand-text {
