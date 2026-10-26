@@ -1,3 +1,32 @@
+Attachment style.css successfully uploaded and added.None selected 
+
+Skip to content
+Using Gmail with screen readers
+Enable desktop notifications for Gmail.
+   OK  No thanks
+1 of 70
+hihjk
+Inbox
+
+Ryan
+Attachments
+11:56 AM (8 minutes ago)
+ 
+
+Ghulam Rasool
+Attachments
+12:00 PM (4 minutes ago)
+to me
+
+
+
+On Mon, 26 Oct 2026, 11:56 am Ryan, <ryanatwork98@gmail.com> wrote:
+
+
+ 2 Attachments
+  •  Scanned by Gmail
+style_updated.css
+100%
 /* =========================================
    RYAN KNOWLEDGE NEXUS
    Main Website Styles
@@ -1667,3 +1696,120 @@ input {
     }
 
 }
+
+
+/* ---------- EUROPEAN HISTORY LIBRARY ---------- */
+
+.european-history-section {
+    padding: 72px 0;
+    background: var(--cream-dark);
+}
+
+.european-history-layout {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: center;
+    gap: 48px;
+    padding: 42px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.european-history-copy h2 {
+    margin: 8px 0 14px;
+    color: var(--navy);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 4vw, 44px);
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+.european-history-copy p {
+    max-width: 560px;
+    margin-bottom: 24px;
+    color: var(--text-soft);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.european-history-copy .btn {
+    width: fit-content;
+}
+
+.european-history-copy small {
+    display: block;
+    margin-top: 13px;
+    color: var(--text-soft);
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.european-history-art {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 25px;
+    color: var(--brown-light);
+    text-align: center;
+    background:
+        radial-gradient(circle at center, rgba(215,189,148,0.12), transparent 58%),
+        var(--navy);
+    border: 1px solid rgba(185,145,95,0.45);
+}
+
+.history-mark {
+    display: grid;
+    place-items: center;
+    width: 112px;
+    height: 112px;
+    border: 1px solid var(--brown);
+    border-radius: 50%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.history-art-caption {
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+    .european-history-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 30px;
+    }
+
+    .european-history-art {
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .european-history-section {
+        padding: 48px 0;
+    }
+
+    .european-history-layout {
+        padding: 23px;
+    }
+
+    .european-history-copy .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .history-mark {
+        width: 88px;
+        height: 88px;
+        font-size: 32px;
+    }
+}
+Displaying index_updated.html.
