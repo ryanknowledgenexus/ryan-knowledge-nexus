@@ -1669,117 +1669,33 @@ input {
 }
 
 
-/* ---------- EUROPEAN HISTORY LIBRARY ---------- */
+/* RKN study materials and MCQ bank additions */
+.material-section, .mcq-bank-section { padding: 72px 0; background: var(--cream, #f7f3ec); }
+.material-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.material-card { background:#fff; border:1px solid #e6ddcf; border-radius:18px; padding:28px; box-shadow:0 10px 28px rgba(11,31,58,.06); }
+.material-kicker { display:inline-block; color:#8b6a3e; font-size:.76rem; font-weight:800; letter-spacing:.12em; margin-bottom:12px; }
+.material-card h3 { color:#0b1f3a; margin:0 0 10px; font-size:1.45rem; }
+.material-card p { color:#5f6670; line-height:1.65; margin-bottom:22px; }
+.search-message { margin:12px 0 0; color:#4d5968; min-height:1.5em; }
+.search-message a { color:#0b1f3a; font-weight:700; }
+.bank-controls { display:grid; grid-template-columns:2fr 1fr; gap:12px; margin:22px 0 12px; }
+.bank-controls input,.bank-controls select { width:100%; min-width:0; border:1px solid #d6dce3; border-radius:10px; padding:13px 14px; background:white; color:#17283c; font:inherit; }
+.bank-status { color:#596579; margin:8px 0 16px; }
+.mcq-bank-list { display:grid; grid-template-columns:1fr; gap:14px; }
+.mcq-item { background:#fff; border:1px solid #e2e6eb; border-radius:14px; padding:20px; box-shadow:0 5px 18px rgba(11,31,58,.04); }
+.mcq-item h3 { font-size:1rem; line-height:1.55; color:#142a43; margin:8px 0 14px; }
+.mcq-item-top { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; color:#77613f; font-size:.78rem; font-weight:800; letter-spacing:.04em; }
+.mcq-item-options { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
+.mcq-bank-option { border:1px solid #d9e0e8; background:#fbfcfd; border-radius:9px; padding:11px 12px; text-align:left; color:#23354b; cursor:pointer; font:inherit; }
+.mcq-bank-option:hover:not(:disabled) { border-color:#b9915f; background:#faf5ed; }
+.mcq-bank-option.correct { border-color:#23945c; background:#e4f7ec; color:#17663e; }
+.mcq-bank-option.wrong { border-color:#d84c4c; background:#fff0f0; color:#a52222; }
+.mcq-bank-option:disabled { cursor:default; }
+.mcq-feedback { margin-top:12px; border-radius:9px; padding:12px 14px; background:#f1f5f9; color:#35465a; line-height:1.55; display:none; }
+.mcq-feedback.show { display:block; }
+.mcq-feedback.is-correct { background:#e4f7ec; color:#17663e; }
+.mcq-feedback.is-wrong { background:#fff0f0; color:#a52222; }
+.mcq-empty { background:#fff; border-radius:12px; padding:22px; color:#596579; }
+@media(max-width:700px) { .material-grid,.bank-controls { grid-template-columns:1fr; } .mcq-item-options { grid-template-columns:1fr; } .material-section,.mcq-bank-section { padding:48px 0; } }
 
-.european-history-section {
-    padding: 72px 0;
-    background: var(--cream-dark);
-}
-
-.european-history-layout {
-    display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    align-items: center;
-    gap: 48px;
-    padding: 42px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow);
-}
-
-.european-history-copy h2 {
-    margin: 8px 0 14px;
-    color: var(--navy);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(32px, 4vw, 44px);
-    font-weight: normal;
-    line-height: 1.15;
-}
-
-.european-history-copy p {
-    max-width: 560px;
-    margin-bottom: 24px;
-    color: var(--text-soft);
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-.european-history-copy .btn {
-    width: fit-content;
-}
-
-.european-history-copy small {
-    display: block;
-    margin-top: 13px;
-    color: var(--text-soft);
-    font-size: 11px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
-
-.european-history-art {
-    min-height: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    padding: 25px;
-    color: var(--brown-light);
-    text-align: center;
-    background:
-        radial-gradient(circle at center, rgba(215,189,148,0.12), transparent 58%),
-        var(--navy);
-    border: 1px solid rgba(185,145,95,0.45);
-}
-
-.history-mark {
-    display: grid;
-    place-items: center;
-    width: 112px;
-    height: 112px;
-    border: 1px solid var(--brown);
-    border-radius: 50%;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 40px;
-    letter-spacing: 3px;
-}
-
-.history-art-caption {
-    font-size: 9px;
-    letter-spacing: 2px;
-}
-
-@media (max-width: 900px) {
-    .european-history-layout {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        padding: 30px;
-    }
-
-    .european-history-art {
-        min-height: 180px;
-    }
-}
-
-@media (max-width: 600px) {
-    .european-history-section {
-        padding: 48px 0;
-    }
-
-    .european-history-layout {
-        padding: 23px;
-    }
-
-    .european-history-copy .btn {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .history-mark {
-        width: 88px;
-        height: 88px;
-        font-size: 32px;
-    }
-}
+.search-highlight { outline: 3px solid #d6b477 !important; box-shadow: 0 0 0 6px rgba(214,180,119,.18) !important; transition: outline .2s ease; }
